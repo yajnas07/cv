@@ -1,104 +1,352 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title> Personal Website</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanjay Kumar – Senior Software Architect &amp; Systems Engineer</title>
+  <meta name="description" content="Portfolio and CV of Sanjay Kumar, Software Architect at Cadence Design Systems specialising in SystemC, TLM2, Virtual Platforms and SoC modelling." />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="alternate icon" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
-  <h1>संजय कुमार</h1>
-  <hr />
-  <table cellspacing="40px">
-    <tr>
-      <td><img src="sanjay-profile.png" height="150" width="150" /></td>
-      <td>
-        <h2> Sanjay Kumar</h2>
-        <p>
-          <em>Software Architect, Cadence Design Systems</em>
-        </p>
-      </td>
-    </tr>
-  </table>
-  <hr />
-  <h2>About Me</h2>
-  <p>
-    Hi, I am Sanjay, working as Software Architect at Cadence India, Bangalore. I have extensive experience in developing SOC Virtual and Hybrid platforms for enabling early software development and performance tuning, developing infrastructure for
-    IP
-    modeling, IP models like DMAs, Interconnects, full system integration, verifications, and release to end customers.
-    I have experience in a wide variety of techniques used for modeling Virtual platforms starting from C/C++ based SSI(Simulation System Interface) to industry-standard SystemC and TLM2.0 I have also developed several transactors to interface
-    Memories
-    like DDR4/5, LPDDR4/5 with a fast and coherent systemC memory, interface DSI display host controller with a virtual DSI device, interface CSI2 Camera device to CSI Host controller running on RTL side.
-    <br />
-    I am a computer science graduate from the National Institute of Technology, Trichy and I have an MS degree from BITS, Pilani in microelectronics. My areas of interest include SystemC and TLM methodologies, Hybrid Emulation and Simulation,
-    programming
-    languages, Design patterns, Algorithm Design
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">SK</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#publications">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="Profile.pdf" download class="btn btn-outline nav-cta">
+        <i class="fa-solid fa-download"></i> Download CV
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-  </p>
-  <hr>
-  <h2>
-    My Skill Set
-  </h2>
-  <table border="2px">
-    <thead>
-      <th>Skill</th>
-      <th>Expertise Level</th>
-    </thead>
-    <tr>
-      <td>C/C++/SystemC</td>
-      <td>⭐⭐⭐⭐</td>
-    </tr>
-    <tr>
-      <td>Python/TCL/HTML/Javascript</td>
-      <td>⭐⭐⭐</td>
-    </tr>
-    <tr>
-      <td>
-        SystemC Modeling & TLM2
-      </td>
-      <td>
-        ⭐⭐⭐⭐⭐
-      </td>
+  <section id="hero">
+    <div class="hero-bg-dots"></div>
+    <div class="hero-content">
+      <div class="hero-photo-wrap">
+        <img src="SanjayPhoto.jpg" alt="Sanjay Kumar" class="hero-photo" />
+      </div>
+      <div class="hero-text">
+        <p class="hero-greeting">Namaste I am</p>
+        <h1 class="hero-name">Sanjay Kumar</h1>
+        <p class="hero-name-devanagari">&#2360;&#2306;&#2332;&#2351; &#2325;&#2369;&#2350;&#2366;&#2352;</p>
+        <div class="hero-title-wrap">
+          <span class="typed-text" id="typed"></span><span class="typed-cursor">|</span>
+        </div>
+        <p class="hero-location"><i class="fa-solid fa-location-dot"></i> Bangalore, India &nbsp;&#183;&nbsp; Cadence Design Systems</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Get in Touch</a>
+          <a href="Profile.pdf" download class="btn btn-outline"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
+          <a href="https://github.com/yajnas07" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="hero-scroll-down" aria-label="Scroll down"><i class="fa-solid fa-chevron-down"></i></a>
+  </section>
 
-    </tr>
-    <tr>
-      <td>
-        EDA Verification Tools
-      </td>
-      <td>⭐⭐⭐⭐</td>
-    </tr>
-    <tr>
-      <td>Virtual Platform Integration</td>
-      <td>⭐⭐⭐⭐</td>
-    </tr>
-    <tr>
-      <td>AMBA-PV Buses</td>
-      <td>⭐⭐⭐</td>
-    </tr>
-    <tr>
-      <td>Simulation Infrastructure Development</td>
-      <td>⭐⭐⭐⭐</td>
-    </tr>
-    <tr>
-      <td>Hybrid transactor development</td>
-      <td>⭐⭐⭐⭐</td>
-    </tr>
-  </table>
-  <hr>
-  <h2>Publications</h2>
-  <ul>
-    <li>Enabling Reset in SystemC based Virtual Platforms</li>
-    <li>Accelerating SystemC SoC Development Using Text Based Netlist Connectivity Specification</li>
-    <li>Method and system for emulating an image processing system</li>
-  </ul>
-  <hr>
-  <h2>Reach Me</h2>
-  <ul>
-    <li><a href="https://www.linkedin.com/in/sanjay-kumar-singh-a622b025/">LinkedIn</a></li>
-    <li><a href="http://codepuz.blogspot.com/">Blog</a></li>
-    <li><a href="https://github.com/yajnas07">GitHub</a></li>
-  </ul>
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">About Me</h2>
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p>I am a <strong>Software Architect</strong> at <strong>Cadence Design Systems</strong>, Bangalore, with extensive experience in building SoC Virtual and Hybrid platforms that accelerate early software development and performance tuning.</p>
+          <p>Over the years I have designed and delivered IP modeling infrastructure, modelled complex IPs such as <em>DMAs, Interconnects</em> and full system integrations. I am well versed in every generation of virtual-platform methodology from C/C++ based SSI (Simulation System Interface) right through to industry-standard <strong>SystemC / TLM 2.0</strong>.</p>
+          <p>I have built several transactors bridging industry memories (DDR4/5, LPDDR4/5) with a fast coherent SystemC memory sub-system, a DSI Display Host Controller interface and a CSI-2 Camera device transactor for RTL co-simulation.</p>
+          <p>Outside work, I love experimenting with modern C++, learning new programming paradigms, writing for my <a href="http://codepuz.blogspot.com/" target="_blank" rel="noopener">tech blog</a>, and creating simple programs to introduce kids to coding.</p>
+          <div class="about-highlights">
+            <div class="highlight-card"><i class="fa-solid fa-microchip"></i><span>SoC Virtual Platforms</span></div>
+            <div class="highlight-card"><i class="fa-solid fa-diagram-project"></i><span>SystemC / TLM 2.0</span></div>
+            <div class="highlight-card"><i class="fa-solid fa-server"></i><span>Hybrid Emulation</span></div>
+            <div class="highlight-card"><i class="fa-solid fa-code"></i><span>C++ / Python</span></div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card"><span class="stat-number counter" data-target="15">0</span><span class="stat-plus">+</span><span class="stat-label">Years Experience</span></div>
+          <div class="stat-card"><span class="stat-number counter" data-target="3">0</span><span class="stat-plus">+</span><span class="stat-label">Patents &amp; Papers</span></div>
+          <div class="stat-card"><span class="stat-number counter" data-target="11">0</span><span class="stat-plus">+</span><span class="stat-label">GitHub Repos</span></div>
+          <div class="stat-card"><span class="stat-number counter" data-target="2">0</span><span class="stat-plus"></span><span class="stat-label">PG Degrees</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">Technical Skills</h2>
+      <div class="skills-wrapper">
+        <div class="skills-bars reveal">
+          <h3 class="skills-category">Core Expertise</h3>
+          <div class="skill-item"><div class="skill-label"><span>SystemC &amp; TLM 2.0</span><span class="skill-pct">95%</span></div><div class="skill-bar"><div class="skill-fill" data-width="95"></div></div></div>
+          <div class="skill-item"><div class="skill-label"><span>C / C++ (Modern)</span><span class="skill-pct">90%</span></div><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+          <div class="skill-item"><div class="skill-label"><span>Virtual Platform Integration</span><span class="skill-pct">90%</span></div><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+          <div class="skill-item"><div class="skill-label"><span>Hybrid Transactor Development</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+          <div class="skill-item"><div class="skill-label"><span>Simulation Infrastructure</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+          <div class="skill-item"><div class="skill-label"><span>EDA / Verification Tools</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+          <div class="skill-item"><div class="skill-label"><span>AMBA-PV / AXI Buses</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+        </div>
+        <div class="skills-tags reveal">
+          <h3 class="skills-category">Languages &amp; Tools</h3>
+          <div class="tag-cloud">
+            <span class="tag tag-primary">C++17/20</span><span class="tag tag-primary">SystemC</span><span class="tag tag-primary">TLM 2.0</span>
+            <span class="tag tag-secondary">Python</span><span class="tag tag-secondary">TCL</span><span class="tag tag-secondary">JavaScript</span><span class="tag tag-secondary">HTML / CSS</span>
+            <span class="tag tag-accent">DDR4 / DDR5</span><span class="tag tag-accent">LPDDR4 / LPDDR5</span><span class="tag tag-accent">DSI / CSI-2</span>
+            <span class="tag tag-neutral">Git / GitHub</span><span class="tag tag-neutral">Linux</span><span class="tag tag-neutral">Make / CMake</span><span class="tag tag-neutral">Design Patterns</span>
+          </div>
+          <h3 class="skills-category" style="margin-top:2rem">Areas of Interest</h3>
+          <div class="tag-cloud">
+            <span class="tag tag-interest">Virtual Platforms</span><span class="tag tag-interest">Hybrid Emulation</span><span class="tag tag-interest">SystemC Methodology</span>
+            <span class="tag tag-interest">IP Modelling</span><span class="tag tag-interest">Memory Controllers</span><span class="tag tag-interest">SoC Architecture</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div><h3>Senior Software Architect</h3><p class="timeline-org"><a href="https://www.cadence.com" target="_blank" rel="noopener">Cadence Design Systems</a> &#8212; Bangalore, India</p></div>
+              <span class="timeline-date">Current</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Lead design and delivery of SoC Virtual &amp; Hybrid Platforms enabling early software development and performance tuning.</li>
+              <li>Developed IP modeling infrastructure supporting DMAs, Interconnects, full system integration and customer releases.</li>
+              <li>Implemented transactors bridging DDR4/5 and LPDDR4/5 with a fast coherent SystemC memory sub-system.</li>
+              <li>Built DSI Display Host Controller to virtual DSI device transactor for display subsystem bring-up.</li>
+              <li>Developed CSI-2 Camera device transactor to interface with a CSI Host Controller on RTL.</li>
+              <li>Evolved simulation infrastructure from C/C++ SSI through to industry-standard SystemC / TLM 2.0.</li>
+            </ul>
+            <div class="timeline-tags"><span>SystemC</span><span>TLM 2.0</span><span>C++</span><span>Virtual Platforms</span><span>Hybrid Emulation</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot edu"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div><h3>M.S. Microelectronics</h3><p class="timeline-org">BITS Pilani</p></div>
+              <span class="timeline-date">Post-Graduate</span>
+            </div>
+            <p>Advanced studies in microelectronics, semiconductor devices and VLSI design, complementing expertise in SoC architecture and hardware-software co-design.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot edu"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div><h3>B.Tech. Computer Science &amp; Engineering</h3><p class="timeline-org">National Institute of Technology (NIT), Trichy</p></div>
+              <span class="timeline-date">Under-Graduate</span>
+            </div>
+            <p>Strong foundations in computer science, data structures, algorithms, operating systems and computer architecture at one of India's premier engineering institutions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Research, Publications &amp; Patents</h2>
+      <div class="pub-grid">
+        <div class="pub-card reveal">
+          <div class="pub-type paper"><i class="fa-solid fa-file-lines"></i> Conference Paper</div>
+          <h3>Enabling Reset in SystemC-based Virtual Platforms</h3>
+          <p>Addresses the non-trivial challenge of implementing deterministic, hierarchical reset in large SystemC virtual platform models - a critical requirement for accurate SoC bring-up simulation.</p>
+          <div class="pub-tags"><span>SystemC</span><span>Virtual Platforms</span><span>Reset Modelling</span></div>
+        </div>
+        <div class="pub-card reveal">
+          <div class="pub-type paper"><i class="fa-solid fa-file-lines"></i> Conference Paper</div>
+          <h3>Accelerating SystemC SoC Development Using Text-Based Netlist Connectivity Specification</h3>
+          <p>Presents a methodology for specifying and automatically instantiating SoC connectivity from a human-readable netlist description, dramatically reducing integration effort and error rate.</p>
+          <div class="pub-tags"><span>SystemC</span><span>SoC</span><span>Automation</span><span>Netlist</span></div>
+        </div>
+        <div class="pub-card reveal">
+          <div class="pub-type patent"><i class="fa-solid fa-certificate"></i> Patent</div>
+          <h3>Method and System for Emulating an Image Processing System</h3>
+          <p>Granted patent covering a novel method and system for hybrid emulation of image signal processors, enabling early ISP software validation before silicon availability.</p>
+          <div class="pub-tags"><span>Patent</span><span>Emulation</span><span>Image Processing</span><span>ISP</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">GitHub Projects</h2>
+      <p class="section-subtitle reveal">A selection of personal experiments and learning repositories from <a href="https://github.com/yajnas07" target="_blank" rel="noopener">github.com/yajnas07</a></p>
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-header"><i class="fa-brands fa-github project-icon"></i><div class="project-stars"><i class="fa-solid fa-star"></i> 3</div></div>
+          <h3><a href="https://github.com/yajnas07/modernCpp" target="_blank" rel="noopener">modernCpp</a></h3>
+          <p>Experiments and explorations with C++11 and C++14 features - move semantics, lambdas, variadic templates and more.</p>
+          <div class="project-footer"><span class="lang-dot cpp"></span> C++</div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-header"><i class="fa-brands fa-github project-icon"></i><div class="project-stars"><i class="fa-solid fa-star"></i> 2</div></div>
+          <h3><a href="https://github.com/yajnas07/cppmunchies" target="_blank" rel="noopener">cppmunchies</a></h3>
+          <p>Bite-sized C++ snippets and utilities - a personal cookbook of idiomatic C++ patterns and solutions.</p>
+          <div class="project-footer"><span class="lang-dot cpp"></span> C++</div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-header"><i class="fa-brands fa-github project-icon"></i></div>
+          <h3><a href="https://github.com/yajnas07/games" target="_blank" rel="noopener">games</a></h3>
+          <p>Fun browser-based game experiments - an active playground for exploring JavaScript game programming.</p>
+          <div class="project-footer"><span class="lang-dot js"></span> JavaScript</div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-header"><i class="fa-brands fa-github project-icon"></i></div>
+          <h3><a href="https://github.com/yajnas07/game-of-life" target="_blank" rel="noopener">game-of-life</a></h3>
+          <p>Conway's Game of Life implemented in JavaScript - a classic cellular automaton demonstrating emergent complexity.</p>
+          <div class="project-footer"><span class="lang-dot js"></span> JavaScript</div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-header"><i class="fa-brands fa-github project-icon"></i></div>
+          <h3><a href="https://github.com/yajnas07/python" target="_blank" rel="noopener">python</a></h3>
+          <p>Python practice and utility scripts - algorithms and tooling experiments.</p>
+          <div class="project-footer"><span class="lang-dot py"></span> Python</div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-header"><i class="fa-brands fa-github project-icon"></i></div>
+          <h3><a href="https://github.com/yajnas07/forKids" target="_blank" rel="noopener">forKids</a></h3>
+          <p>Simple beginner-friendly programs to introduce children to programming concepts in a fun, approachable way.</p>
+          <div class="project-footer"><span class="lang-dot cpp"></span> C++</div>
+        </div>
+        <div class="project-card project-card-cta reveal">
+          <i class="fa-brands fa-github" style="font-size:2.5rem;opacity:.4"></i>
+          <p>See all repositories on GitHub</p>
+          <a href="https://github.com/yajnas07?tab=repositories" target="_blank" rel="noopener" class="btn btn-outline">View All Repos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hobbies" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Hobbies &amp; Passion Projects</h2>
+      <p class="section-subtitle reveal">Beyond the day job — things I build, learn, and explore purely for the joy of it.</p>
+      <div class="hobbies-grid">
+
+        <div class="hobby-card reveal">
+          <div class="hobby-icon" style="background:rgba(88,166,255,.12);color:var(--clr-primary)">
+            <i class="fa-solid fa-chalkboard-user"></i>
+          </div>
+          <div class="hobby-body">
+            <h3>Creating Educational Content</h3>
+            <p>I build interactive web-based learning portals to make school subjects engaging for kids. My <strong>learnr</strong> project hosts structured lessons covering Maths, Science and Social Science — complete with equations, diagrams and quizzes, all rendered in the browser.</p>
+            <a href="https://yajnas07.github.io/learnr/" target="_blank" rel="noopener" class="hobby-link"><i class="fa-brands fa-github"></i> yajnas07/learnr</a>
+          </div>
+        </div>
+
+        <div class="hobby-card reveal">
+          <div class="hobby-icon" style="background:rgba(188,140,255,.12);color:var(--clr-purple)">
+            <i class="fa-solid fa-film"></i>
+          </div>
+          <div class="hobby-body">
+            <h3>Manim Animations</h3>
+            <p>I use <strong>Manim</strong> — the mathematical animation engine made famous by 3Blue1Brown — to produce programmatic, publication-quality animations that explain complex technical and mathematical concepts visually. A great intersection of code, creativity and pedagogy.</p>
+            <a href="https://github.com/yajnas07/manim" target="_blank" rel="noopener" class="hobby-link"><i class="fa-brands fa-github"></i> yajnas07/manim</a>
+          </div>
+        </div>
+
+        <div class="hobby-card reveal">
+          <div class="hobby-icon" style="background:rgba(63,185,80,.12);color:var(--clr-accent)">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <div class="hobby-body">
+            <h3>Exploring the Power of LLMs</h3>
+            <p>I enjoy experimenting with Large Language Models — from prompt engineering and RAG pipelines to building small agentic tools. I find the intersection of LLMs with EDA and verification tooling particularly exciting, exploring where AI can accelerate hardware design workflows.</p>
+            <div class="hobby-tags"><span>Prompt Engineering</span><span>RAG</span><span>Agentic AI</span><span>LLM + EDA</span></div>
+          </div>
+        </div>
+
+        <div class="hobby-card reveal">
+          <div class="hobby-icon" style="background:rgba(247,129,102,.12);color:var(--clr-orange)">
+            <i class="fa-solid fa-gamepad"></i>
+          </div>
+          <div class="hobby-body">
+            <h3>Building Arcade Games</h3>
+            <p>I love crafting classic arcade experiences entirely in vanilla HTML/CSS/JavaScript — no frameworks, just pure web fun. My <strong>games</strong> repo currently hosts nine playable games:</p>
+            <div class="games-list">
+              <span><i class="fa-solid fa-circle-dot"></i> Bubble Pop</span>
+              <span><i class="fa-solid fa-circle-dot"></i> Caterpillar</span>
+              <span><i class="fa-solid fa-circle-dot"></i> Ludo</span>
+              <span><i class="fa-solid fa-circle-dot"></i> Maze</span>
+              <span><i class="fa-solid fa-circle-dot"></i> Memory</span>
+              <span><i class="fa-solid fa-circle-dot"></i> Number Dash</span>
+              <span><i class="fa-solid fa-circle-dot"></i> Snakes &amp; Ladders</span>
+              <span><i class="fa-solid fa-circle-dot"></i> Tic-Tac-Toe</span>
+              <span><i class="fa-solid fa-circle-dot"></i> Word Jumble</span>
+            </div>
+            <a href="https://yajnas07.github.io/games/" target="_blank" rel="noopener" class="hobby-link"><i class="fa-brands fa-github"></i> yajnas07/games</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Get In Touch</h2>
+      <p class="section-subtitle reveal">Whether you want to discuss technology, collaborate on a project, or just say hello - my inbox is open.</p>
+      <div class="contact-grid reveal">
+        <a href="https://www.linkedin.com/in/sanjay-kumar-singh-a622b025/" target="_blank" rel="noopener" class="contact-card">
+          <i class="fa-brands fa-linkedin"></i>
+          <div><strong>LinkedIn</strong><span>sanjay-kumar-singh</span></div>
+        </a>
+        <a href="https://github.com/yajnas07" target="_blank" rel="noopener" class="contact-card">
+          <i class="fa-brands fa-github"></i>
+          <div><strong>GitHub</strong><span>yajnas07</span></div>
+        </a>
+        <a href="http://codepuz.blogspot.com/" target="_blank" rel="noopener" class="contact-card">
+          <i class="fa-solid fa-blog"></i>
+          <div><strong>Tech Blog</strong><span>codepuz.blogspot.com</span></div>
+        </a>
+        <a href="Profile.pdf" download class="contact-card">
+          <i class="fa-solid fa-file-pdf"></i>
+          <div><strong>Download CV</strong><span>Profile.pdf</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container footer-inner">
+      <p>Designed &amp; built by <strong>Sanjay Kumar</strong> &#183; Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
+      <p class="footer-sub">&#169; <span id="year"></span> Sanjay Kumar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="js/main.js"></script>
 </body>
-
 </html>
